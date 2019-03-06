@@ -5,7 +5,7 @@
 
 >只支持Ubuntu 18.04
 
-目前Vultr在搞活动，新注册用户，充50送25，可以考虑新建的小号薅羊毛，需要老用户邀请，附上邀请链接[https://www.vultr.com/?ref=7780016-4F](https://www.vultr.com/?ref=7780016-4F)
+目前Vultr在搞活动，新注册用户，充50送25，可以考虑新建的小号薅羊毛，需要老用户邀请，附上邀请链接[https://www.vultr.com/?ref=7576590](https://www.vultr.com/?ref=7576590)
 
 下方视频教程：
 ---
@@ -23,13 +23,13 @@
 
 `Type`->`Boot`
 
-最后一项，打开[VultrStartupScript.sh](https://raw.githubusercontent.com/lbp0200/ssr-vultr/master/VultrStartupScript.sh)，复制里面的内容，粘贴进去
+最后一项，打开[VultrStartupScript.sh](https://raw.githubusercontent.com/linonetwo/ssr-vultr/master/VultrStartupScript.sh)，复制里面的内容，粘贴进去
 
 第二行是参数
 
-PWD填你自己的密码
+PASSWORD 填你自己的密码
 
-PORT端口号，不建议修改
+PORT 为端口号
 
 最后，点最下方蓝色按钮`Add Script`
 
@@ -37,13 +37,13 @@ PORT端口号，不建议修改
 
 新建服务器
 
-`Server Type`选择Ubuntu 18.04
+`Server Type`选择 Ubuntu 18.04
 
 5.`Startup Script`，选中刚才新建的`Startup Script`
 
 > 完成服务器的部署，等待服务器部署完成
 
-ssr客户端的配置文件
+ssr客户端的配置文件在 https://github.com/linonetwo/ssr-vultr/blob/master/config.json
 ```json
 {
     "server": "VPS_IP",
