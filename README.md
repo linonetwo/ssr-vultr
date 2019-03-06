@@ -71,6 +71,7 @@ ssr客户端的配置文件在 https://github.com/linonetwo/ssr-vultr/blob/maste
 ```
 
 其中的 password 会被自动替换成 StartupScript 中定义的 PASSWORD
+不过 VPS_IP 还是得手动替换一下
 
 功能
 ---
