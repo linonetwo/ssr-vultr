@@ -43,14 +43,15 @@ PORT 为端口号
 
 > 完成服务器的部署，等待服务器部署完成
 
-ssr客户端的配置文件在 https://github.com/linonetwo/ssr-vultr/blob/master/config.json
+ssr客户端的配置文件在 https://github.com/linonetwo/ssr-vultr/blob/master/config.json 模板如下：
+
 ```json
 {
     "server": "VPS_IP",
     "server_port": 443,
     "local_address": "0.0.0.0",
     "local_port": 1083,
-    "password": "pwd",
+    "password": "password",
     "method": "aes-128-ctr",
     "protocol": "auth_aes128_md5",
     "protocol_param": "",
@@ -68,6 +69,8 @@ ssr客户端的配置文件在 https://github.com/linonetwo/ssr-vultr/blob/maste
     "fast_open": false
 }
 ```
+
+其中的 password 会被自动替换成 StartupScript 中定义的 PASSWORD
 
 功能
 ---
