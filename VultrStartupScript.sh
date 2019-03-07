@@ -18,7 +18,7 @@ git clone https://github.com/shadowsocksr-rm/shadowsocksr.git
 curl -L -H "Cache-Control: no-cache" -o /opt/shadowsocksr/config.server.json https://raw.githubusercontent.com/linonetwo/ssr-vultr/master/config.json
 curl -L -H "Cache-Control: no-cache" -o /etc/systemd/system/ssr.service https://raw.githubusercontent.com/linonetwo/ssr-vultr/master/ssr.service
 
-sed -i "s/password/${PASSWORD}/g" "/opt/shadowsocksr/config.server.json"
+sed -i "s/PASSWORD/${PASSWORD}/g" "/opt/shadowsocksr/config.server.json"
 sed -i "s/443/${PORT}/g" "/opt/shadowsocksr/config.server.json"
 
 systemctl enable ssr.service
